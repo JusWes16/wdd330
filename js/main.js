@@ -5,9 +5,14 @@ const links = [
     }
 ];
 
-let links_container = document.getElementById('links');
 links.forEach(link => {
-    links_container.innerHTML('<li>');
-    links_container.innerHTML('<a>');
-    
+    let li = document.createElement('li');
+
+    let a = document.createElement('a');
+    a.setAttribute('href', link.url);
+    a.textContent = link.label;
+
+    li.appendChild(a);
+
+    document.querySelector('links').appendChild(li);
 });
