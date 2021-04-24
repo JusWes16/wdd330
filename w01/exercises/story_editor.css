@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+textarea{
+    width: 800px;
+    height: 250px;
+    background-color: lightyellow;
+    margin: 10px 0 0 5px;
+}
+h1{
+    background-color: rgb(33, 33, 112);
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+input, label{
+    margin: 10px 0 10px 5px;
+}
+button{
+    background-color: rgb(69, 69, 189);
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
