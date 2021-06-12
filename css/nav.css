@@ -1,5 +1,5 @@
 header{
-    background-color: rgba(0, 0, 179);
+    background-color: rgb(0, 0, 116);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@ header a {
     display: block;
     position: absolute;
     z-index: 1;
-    background-color: rgba(0, 0, 179);
+    background-color: rgb(0, 0, 116);
     list-style: none;
     width: 100px;
     margin: 0;
