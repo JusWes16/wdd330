@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 330 Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body id="main-page">
-    <nav>
-        <ul id="links"></ul>
-    </nav>
-    <h1 id="main-header">WDD 330 Portfolio</h1>
+    <header>
+        <a href="index.html"><h1 id="main-header">WDD 330 Portfolio</h1></a> 
+        <div class="dropdown" onclick="dropdown()">
+            <span>Week List</span>
+            <ul class="links"></ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="home-page">
+            <h1>Welcome to my WDD 330 Portfolio</h1>
+        </div>
+    </main>
+    
     <script src='js/main.js'></script>
 </body>
 </html>

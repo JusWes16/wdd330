@@ -6,10 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 06</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <h1>WDD 330 Portfolio</h1>
-    <h2>Week 06</h2>
-    <p><a href="todo/todo.html">To Do List</a></p>
+    <header>
+        <a href="index.html"><h1 id="main-header">WDD 330 Portfolio</h1></a> 
+        <div class="dropdown" onclick="dropdown()">
+            <span>Week List</span>
+            <ul class="links"></ul>
+        </div>
+    </header>
+    <div class="page-heading">
+        <h1>WDD 330 - W06</h1>
+    </div>
+
+    <main class="pages">
+        <section class="exercises">
+            <h2>Exercises:</h2>
+            <p><a href="todo/todo.html">To Do List</a></p>
+        </section>
+    
+        <section class="notes">
+            <h2>Notes:</h2>
+            <p class="no-notes">No notes for this week</p>
+        </section>
+    
+        <section class="questions">
+            <h2>Questions:</h2>
+            <ul>
+                <li>No questions this week.</li>
+            </ul>
+        </section>
+    </main>
+    <script src='../js/main.js'></script>
 </body>
 </html>

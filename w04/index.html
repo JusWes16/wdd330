@@ -6,61 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 04</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <h1>WDD 330 Portfolio</h1>
-    <h2>Week 04</h2>
+    <header>
+        <a href="index.html"><h1 id="main-header">WDD 330 Portfolio</h1></a> 
+        <div class="dropdown" onclick="dropdown()">
+            <span>Week List</span>
+            <ul class="links"></ul>
+        </div>
+    </header>
+    <div class="page-heading">
+        <h1>WDD 330 - W04</h1>
+    </div>
 
-    <p><a href="teamActivity/tic-tac-toe.html">Team Activity</a></p>
-    <p><a href="exercises/search.html">Forms exercise</a></p>
+    <main class="pages">
+        <section class="exercises">
+            <h2>Exercises:</h2>
+            <p><a href="teamActivity/tic-tac-toe.html">Team Activity</a></p>
+            <p><a href="exercises/search.html">Forms exercise</a></p>
+        </section>
+    
+        <section class="notes">
+            <h2>Notes:</h2>
+            <h3>Chapter 8</h3>
+            <p>
+                You can use document.forms to access the forms on a page. Access a specific form use the bracket notation.
+            </p>
+            <p>
+                You can also use the form.elements notation to access the elements of a form, or you can get a specific
+                element by using its given name attribute. 
+            </p>
+            <p>
+                You can use event listeners to alter and control what is shown in a forms input field. 
+            </p>
 
-    <h2>Notes</h2>
-    <h3>Chapter 8</h3>
-    <p>
-        You can use document.forms to access the forms on a page. Access a specific form use the bracket notation.
-    </p>
-    <p>
-        You can also use the form.elements notation to access the elements of a form, or you can get a specific
-        element by using its given name attribute. 
-    </p>
-    <p>
-        You can use event listeners to alter and control what is shown in a forms input field. 
-    </p>
+            <h3>Chapter 12</h3>
+            <p>
+                Parentheses are not always required when initializing a new instance of a class. It is only needed if
+                you are passing values to the class creation. 
+            </p>
+            <p>
+                A constructor function is used to create an instance of a class. 
+            </p>
+            <p>
+                The 'this' keyword is used to access attributes and methods defined in the class. 
+            </p>
+            <p>
+                A static method can be called. It is different because it is called by the class instead of an instance of the class. 
+            </p>
+            <p>
+                Using the 'extends' keyword you can define a second class that inherits all of the attributes and methods from 
+                previous class. 
+            </p>
 
-    <h3>Chapter 12</h3>
-    <p>
-        Parentheses are not always required when initializing a new instance of a class. It is only needed if
-        you are passing values to the class creation. 
-    </p>
-    <p>
-        A constructor function is used to create an instance of a class. 
-    </p>
-    <p>
-        The 'this' keyword is used to access attributes and methods defined in the class. 
-    </p>
-    <p>
-        A static method can be called. It is different because it is called by the class instead of an instance of the class. 
-    </p>
-    <p>
-        Using the 'extends' keyword you can define a second class that inherits all of the attributes and methods from 
-        previous class. 
-    </p>
-
-    <h3>Chapter 15</h3>
-    <p>
-        Libraries can be used to improve you code and your coding experience. 
-    </p>
-    <p>
-        Using an MVC approach helps create well organized and functional programs. It seperates logic and views into their or files. 
-    </p>
-    <p>
-        Templates are very useful and helpful for implementing javascript into your html documents. Templates like
-        EJS, Pug, and Handlebars all allow you to do this but in different ways. 
-    </p>
-
-    <h2>Questions:</h2>
-    <ul>
-        <li>No questions for this week</li>
-    </ul>
+            <h3>Chapter 15</h3>
+            <p>
+                Libraries can be used to improve you code and your coding experience. 
+            </p>
+            <p>
+                Using an MVC approach helps create well organized and functional programs. It seperates logic and views into their or files. 
+            </p>
+            <p>
+                Templates are very useful and helpful for implementing javascript into your html documents. Templates like
+                EJS, Pug, and Handlebars all allow you to do this but in different ways. 
+            </p>
+        </section>
+    
+        <section class="questions">
+            <h2>Questions:</h2>
+            <ul>
+                <li>No questions this week.</li>
+            </ul>
+        </section>
+    </main>
+    <script src='../js/main.js'></script>
 </body>
 </html>

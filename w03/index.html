@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 03</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <h1>WDD 330 Portfolio</h1>
-    <h2>Week 03</h2>
+    <header>
+        <a href="index.html"><h1 id="main-header">WDD 330 Portfolio</h1></a> 
+        <div class="dropdown" onclick="dropdown()">
+            <span>Week List</span>
+            <ul class="links"></ul>
+        </div>
+    </header>
+    <div class="page-heading">
+        <h1>WDD 330 - W03</h1>
+    </div>
 
-    <p><a href="teamActivity/index.html">Team Activity</a></p>
-    <p><a href="exercises/objects.html">Objects exercise</a></p>
-
-    <h2>Questions:</h2>
-    <ul>
-        <li>Again no questions for this week, I just think I need to spend a little more time reviewing some of this weeks material so I can make sure i have it down. </li>
-    </ul>
+    <main class="pages">
+        <section class="exercises">
+            <h2>Exercises:</h2>
+            <p><a href="teamActivity/index.html">Team Activity</a></p>
+            <p><a href="exercises/objects.html">Objects exercise</a></p>
+        </section>
+    
+        <section class="notes">
+            <h2>Notes:</h2>
+            <p class="no-notes">No notes for this week</p>
+        </section>
+    
+        <section class="questions">
+            <h2>Questions:</h2>
+            <ul>
+                <li>No questions this week.</li>
+            </ul>
+        </section>
+    </main>
+    <script src='../js/main.js'></script>
 </body>
 </html>

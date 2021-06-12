@@ -1,0 +1,10 @@
+.home-page{
+    text-align: center;
+    font-size: 1.7em;
+    background-color: rgb(68, 68, 255);
+    color: white;
+}
+.home-page h1 {
+    padding: 3rem;
+    margin: 0;
+}
