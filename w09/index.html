@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 09</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1 id="main-header">WDD 330 Portfolio</h1></a> 
+        <div class="dropdown" onclick="dropdown()">
+            <span>Week List</span>
+            <ul class="links"></ul>
+        </div>
+    </header>
+    <div class="page-heading">
+        <h1>WDD 330 - W09</h1>
+    </div>
+
+    <main class="pages">
+        <section class="exercises">
+            <h2>Exercises:</h2>
+            <p><a href="team_activity/javascript30-drums/index-START.html">Team Activity | Drums</a></p>
+        </section>
+    
+        <section class="notes">
+            <h2>Notes:</h2>
+            <h3>Chapter 9</h3>
+            <p>
+                Global variables are actually properties of the 'window' object.
+            </p>
+            <p>
+                For the most part you will not see variables being called with the window object
+                (let x = 4; window.x). The exception to this is when you are checking to see if a global variable
+                has been defined(if (x) => if(window.x))
+            </p>
+            <p>
+                Window.location holds information on the URL of the current page. There are also 
+                many properties that come with the window.location object(ex. href, protocol, host, etc.)
+            </p>
+            <p>
+                Window.history can be used to get information on any sites that were visited
+                previously on this current browser.
+            </p>
+            <p>
+                Window.screen contains information on the screen that is being displayed. Information
+                like the height and width can be accessed. 
+            </p>
+            <p>
+                The window object also has the well knows 'document' object which allows you to access
+                the information from the page that is currently loaded. 
+            </p>
+            <p>
+                Timing functions are also apart of the window object that allow you to run functions 
+                based on a certain amount of time. Using setTimeout() method allows you to run a function
+                after a certain amount of time has passed in milliseconds. You can also use the setInterval()
+                method to run a function every set amount of time in milliseconds. 
+            </p>
+
+            <h3>Chapter 14</h3>
+            <p>The data- attibute can be used to embed data into the web page to be used by the 
+                JavaScript program. It is a way to set customized attributes. 
+            </p>
+            <p>
+                When retrieving information from a data- attribute you call it similar to other attibutes 
+                but the data- is dropped and only what follows is what is needed.
+            </p>
+            <p>
+                The window object has properties called localStorage and sessionStorage. Information 
+                is saved in key-value pairs and is saved locally on either your current session or browser.
+            </p>
+            <p>
+                The notification API allows programmers to show messages using the users system's notifications. 
+            </p>
+            <p>
+                Introduced by HTML5 is the audo and video tags making it much easier to add video and audio to
+                your website. 
+            </p>
+
+        </section>
+    
+        <section class="questions">
+            <h2>Questions:</h2>
+            <ul>
+                <li>No questions this week.</li>
+            </ul>
+        </section>
+    </main>
+    <script src='../js/main.js'></script>
+</body>
+</html>

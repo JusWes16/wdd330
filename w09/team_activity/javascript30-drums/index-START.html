@@ -58,6 +58,7 @@
   <audio id='76' data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+  var loc = 0;
   document.addEventListener('keydown', function(e) {
     let code = e.keyCode;
     let drum = document.getElementById(code);
@@ -67,34 +68,19 @@
     setTimeout(function(){
       button.classList.remove('playing');
     }, 750);
+    
+    if (loc == 100){
+      loc = 0
+      button.style.transform = "translate(0, " + loc + "px )";
+    } else {
+      loc += 10;
+      console.log(loc);
+      button.style.transform = "translate(0, " + loc + "px )";
+    }
 
     drum.currentTime = 0;
     drum.play();
   });
-
-
-
-  // if (e.keyCode == 65) {
-  //   document.getElementsByTagName('audio')[0].play();
-  // } else if (e.keyCode == 83) {
-  //   document.getElementsByTagName('audio')[1].play();
-  // } else if (e.keyCode == 68) {
-  //   document.getElementsByTagName('audio')[2].play();
-  // } else if (e.keyCode == 70) {
-  //   document.getElementsByTagName('audio')[3].play();
-  // } else if (e.keyCode == 71) {
-  //   document.getElementsByTagName('audio')[4].play();
-  // } else if (e.keyCode == 72) {
-  //   document.getElementsByTagName('audio')[5].play();
-  // } else if (e.keyCode == 74) {
-  //   document.getElementsByTagName('audio')[6].play();
-  // } else if (e.keyCode == 75) {
-  //   document.getElementsByTagName('audio')[7].play();
-  // } else if (e.keyCode == 76) {
-  //   document.getElementsByTagName('audio')[8].play();
-  // } 
 </script>
-
-
 </body>
 </html>
