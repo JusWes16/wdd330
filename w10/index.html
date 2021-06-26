@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1 id="main-header">WDD 330 Portfolio</h1></a> 
+        <div class="dropdown" onclick="dropdown()">
+            <span>Week List</span>
+            <ul class="links"></ul>
+        </div>
+    </header>
+    <div class="page-heading">
+        <h1>WDD 330 - W10</h1>
+    </div>
+
+    <main class="pages">
+        <section class="exercises">
+            <h2>Exercises:</h2>
+            <p>No exercises this week</p>
+        </section>
+    
+        <section class="notes">
+            <h2>Notes:</h2>
+            <h3>Client-side validation</h3>
+            <p>
+                Form validation is anything that requires a certain form field be filled or 
+                that it be filled with the correct information or the information in the format
+                needed by the site. 
+            </p>
+            <p>
+                Reasons to use form validation: get the correct data from the user in the correct format,
+                to protect the users data, to protect ourseleves (the programmers or the owners of the site) 
+                from malitious data.
+            </p>
+            <p>
+                There are 2 types of client side validation, HTML5 built in validation and writing your own 
+                validation using Javascript code.
+            </p>
+            <h3>Using fetch</h3>
+            <p>
+                  You can use fetch() to POST JSON data by setting a 'Content-Type' header to 'application/json'.
+            </p>
+            <p>
+                You can also use fetch() to upload files by using an input tag with the type 'file' and FormData().
+            </p>
+            <p>
+                You can create your own headers using the Headers() constructor. The contents of a headers can be 
+                queried and retrived using the myHeaders.get method.
+            </p>
+            <p>
+                You can use Polyfill to use fetch in any browser that does not support the use of fetch.
+            </p>
+        </section>
+    
+        <section class="questions">
+            <h2>Questions:</h2>
+            <ul>
+                <li>No questions this week.</li>
+            </ul>
+        </section>
+    </main>
+    <script src='../js/main.js'></script>
+</body>
+</html>

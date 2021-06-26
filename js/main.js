@@ -34,6 +34,10 @@ const links = [
     {
         label: "Week 9",
         url: "https://juswes16.github.io/wdd330/w09/index.html"
+    },
+    {
+        label: "Week 10",
+        url: "https://juswes16.github.io/wdd330/w10/index.html"
     }
 ];
 
@@ -73,6 +77,10 @@ const links = [
 //     {
 //         label: "Week 9",
 //         url: "C:/Users/Gaming PC/Documents/College/Spring 2021/wdd330/wdd330/w09/index.html"
+//     },
+//     {
+//         label: "Week 10",
+//         url: "C:/Users/Gaming PC/Documents/College/Spring 2021/wdd330/wdd330/w10/index.html"
 //     }
 // ];
 
