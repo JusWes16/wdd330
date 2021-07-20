@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Climb</title>
+    <link rel="shortcut icon" href="images/coinclimb-logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/coin.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="crypto.html"><h2>Coin Climb</h2></a>
+        <img id="logo" src="images/coinclimb-logo.png" alt="website logo">
+    </header>
+
+    <main id="coin_view">
+        <h1 class="name"></h1>
+        <h1 class="rank"></h1>
+
+        <section>
+            <div class="coin_data">
+                <h3>Shown Symbol:</h3>
+                <p class="show_symbol"></p>
+            </div>
+            <div class="coin_data">
+                <h3>Symbol:</h3>
+                <p class="symbol"></p>
+            </div>
+            <div class="coin_data">
+                <h3>Latest Price:</h3>
+                <p class="price"></p>
+            </div>
+            <div class="coin_data">
+                <h3>Market Cap:</h3>
+                <p class="market_cap"></p>
+            </div>
+            <div class="coin_data">
+                <h3>24 Hour High:</h3>
+                <p class="high"></p>
+            </div>
+            <div class="coin_data">
+                <h3>24 Hour Low:</h3>
+                <p class="low"></p>
+            </div>
+            <div class="coin_data">
+                <h3>Last Updated:</h3>
+                <p class="date"></p>
+            </div>
+        </section>
+        <button class="add_to_button">Save this Coin</button>
+    </main>
+
+    <script src="scripts/coin.js"></script>
+    <footer>
+        <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston Knowlton</p>
+        <p>Last updated: <span id="lastupdated" ></span></p>
+        <p class="docs">All crypto currency data is retrieved from the Coinlib API. <a href="https://coinlib.io/apidocs" target="_blank">Coinlib API</a> </p>
+    </footer>
+</body>
+</html>

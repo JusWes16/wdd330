@@ -1,0 +1,149 @@
+body{
+    background-color: black;
+    font-family: 'Lexend Mega', sans-serif;
+    color: white;
+}
+header, main, footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: url(../images/crypto-background-img.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+}
+header h2{
+    margin-top: 0;
+    padding: 35px 0  0 10px;
+    font-size: 1.8em;
+    color: rgb(211, 94, 85);
+    text-shadow: 6px 6px 10px black;
+}
+header a{
+    text-decoration: none;
+}
+#logo{
+    margin-top: -45px;
+    margin-left: 220px;
+}
+#name{
+    color: rgb(211, 94, 85);
+}
+.description{
+    text-align: center;
+    background-color: rgba(168, 168, 168, 0.555);
+    border: 2px rgb(211, 94, 85) solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    line-height: 1.6em;
+}
+#coin-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#coin-data h3{
+    font-size: 2em;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#header:hover{
+    background-color: white;
+}
+.name, .symbol{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+#saved_coins a{
+    color: white;
+    margin-left: 13px;
+}
+#saved_coins a:hover{
+    color: rgb(211, 94, 85);
+    cursor: pointer;
+}
+#data, th, td{
+    border-bottom: 1px solid rgba(168, 168, 168, 0.555);
+    border-collapse: collapse;
+}
+#data{
+    margin: 20px auto;
+    grid-column: 1/-1;
+}
+#data th{
+    font-size: 1.25em;
+    color: rgb(211, 94, 85);
+}
+#data th, td{
+    padding: 5px 30px;
+    text-align: center;
+}
+#data tr:hover{
+    background-color: rgba(128, 128, 128, 0.452);
+    cursor: pointer;
+}
+#data td{
+    font-size: 0.9em;
+    padding: 10px 0;
+}
+#data #header:hover{
+    background-color: black;
+}
+#sorting{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+    justify-self: end;
+}
+#sorting select{
+    height: 30px;
+    width: 180px;
+    font-size: 0.8em;
+    border: 2px rgb(211, 94, 85) solid;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.637);
+    margin-top: 50px;
+    margin-left: -20px;
+}
+#sorting h4{
+    margin-top: 55px;
+    margin-right: 40px;
+}
+footer{
+    text-align: center;
+    background-color: #041e3fda;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.pages{
+    margin: 0 auto;
+    text-align: center;
+}
+.pages button{
+    background-color: rgb(211, 94, 85);
+    border: none;
+    margin: 0 5px 10px 5px;
+    border: 2px rgba(128, 128, 128, 0.637) solid;
+    border-radius: 5px;
+}
+.pages button:hover{
+    background-color: rgb(151, 56, 49);
+    cursor: pointer;
+}
+.pages p{
+    margin-bottom: 5px;
+}
+#lastupdated{
+    color: rgb(211, 94, 85);
+}
+.docs{
+    font-size: 0.7em;
+}
+.docs a{
+    color: rgb(211, 94, 85);
+
+}

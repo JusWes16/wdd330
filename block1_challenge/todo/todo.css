@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(253, 251, 242);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px;
+}
+
+#todo_list{
+    width: 350px;
+    margin: 50px auto;
+    border: solid rgb(46, 46, 46) 2px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(78, 90, 129);
+    color: white;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: 40px 250px 40px;
+    border-bottom: 1px solid white
+}
+
+.task:last-child {
+    border: none;
+}
+
+.task p {
+    padding-left: 20px;
+    font-size: 1.1em;
+    line-height: 15px;
+}
+
+.strike_through {
+    text-decoration: line-through;
+}
+
+.checkbox {
+    height: 30px;
+    width: 30px;
+    font-size: 1.4em;
+    margin-top: 10px;
+    line-height: 0px;
+    background-color: rgb(78, 90, 129);
+    color: rgb(10, 197, 10);
+    border-color: rgb(8, 8, 94);
+    border-radius: 50%;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+    border: solid 2px rgb(10, 197, 10);
+}
+
+.delete_task {
+    height: 30px;
+    width: 30px;
+    font-size: 1.5em;
+    margin-top: 10px;
+    line-height: 15px;
+    background-color: rgb(78, 90, 129);
+    justify-self: right;
+    border: none;
+    margin-right: -25px;
+    color: white;
+}
+
+.delete_task:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.task_navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.task_navbar input {
+    background-color: rgb(78, 90, 129);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+.task_navbar input:hover {
+    color: rgb(8, 8, 94);
+    text-decoration: underline;
+}
+
+.active{
+    color: rgb(8, 8, 94) !important;
+    text-decoration: underline;
+}
+
+#tasks_left:hover {
+    color: white;
+    text-decoration: none;
+    cursor: inherit;
+}
+
+#add_task {
+    display: flex;
+}
+
+#add_task input {
+    width: 85%;
+    margin-right: 10px;
+}
+
+#add_task button {
+    height: 30px;
+    width: 30px;
+    font-size: 1.5em;
+    line-height: 15px;
+    background-color: rgb(8, 8, 94);
+    justify-self: right;
+    border: none;
+    margin-right: -25px;
+    color: white;
+    cursor: pointer;
+}
+
+#add_task button:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 4px white;
+}

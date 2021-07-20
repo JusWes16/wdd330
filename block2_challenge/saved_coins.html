@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Climb</title>
+    <link rel="shortcut icon" href="images/coinclimb-logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/coin.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="crypto.html"><h2>Coin Climb</h2></a>
+        <img id="logo" src="images/coinclimb-logo.png" alt="website logo">
+    </header>
+
+    <main id="saved_coins">
+        <h1>Your Saved Coins</h1>
+        <div id="message"></div>
+        <table id="data"></table>
+    </main>
+
+    <script src="scripts/saved_coins.js"></script>
+    <footer>
+        <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston Knowlton</p>
+        <p>Last updated: <span id="lastupdated" ></span></p>
+        <p class="docs">All crypto currency data is retrieved from the Coinlib API. <a href="https://coinlib.io/apidocs" target="_blank">Coinlib API</a> </p>
+    </footer>
+</body>
+</html>

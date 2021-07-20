@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Climb | Home</title>
+    <link rel="shortcut icon" href="images/coinclimb-logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="crypto.html"><h2>Coin Climb</h2></a>
+        <img id="logo" src="images/coinclimb-logo.png" alt="website logo">
+    </header>
+    <main>
+
+        <section class="description">
+            <p>Browse the top 200 Cryptocurrencies (according to coinlib) here on Coin Climb. By clicking on the coins name or symbol you can learn more about that specific coin. </p>
+        </section>
+
+        <section id="coin-data">
+
+            <div>
+                <h3>Top Coins</h3>
+                <p id="saved_coins"><a href="saved_coins.html">Saved Coins</a></p>
+            </div>
+            
+            <div id="sorting">
+                <h4>Sort by:</h4>
+                <select id="filter">
+                    <option value="rank">Rank</option>
+                    <option value="name">Name: A-Z</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                    <option value="volume">Volume</option>
+                    <option value="market">Market Cap</option>
+                </select>
+            </div>
+
+            <table id="data"></table>
+
+        </section>
+
+        <div class="pages">
+            <p>Page</p><button onclick="page1()">1</button><button onclick="page2()">2</button>
+        </div>
+
+    </main>
+    <script src="scripts/main.js"></script>
+    <footer>
+        <p class='legal'>&copy;<span id='copyrightyear'></span> | Weston Knowlton</p>
+        <p>Last updated: <span id="lastupdated" ></span></p>
+        <p class="docs">All cryptocurrency data is retrieved from the Coinlib API. <a href="https://coinlib.io/apidocs" target="_blank">Coinlib API</a> </p>
+    </footer>
+</body>
+</html>
